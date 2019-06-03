@@ -1,0 +1,502 @@
+/*
+Theme Name:   The Newsroom
+Theme URI:    http://statesnewsroom.com
+Description:  Custom Newspaper child theme for The States Newsroom
+Author:       IB5k
+Author URI:   http://ib5k.com
+Template:     Newspaper
+Version:      7.7c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+
+/* HEADER */
+
+/* Reduce space between items so that they don't drop into a new line */
+/*.sf-menu > li > a {
+	padding: 0 12px;
+}*/
+
+/* Change font size in menu */
+/*.sf-menu > li > a {
+	font-size: 10px;
+}*/
+
+/* Style of submenu */
+/*.sf-menu ul {
+    width: auto !important;
+    z-index: 9;
+    padding-top: 10px;
+    box-shadow: 7px 7px 21px -6px rgba(0, 0, 0, 0.49);
+	-webkit-box-shadow:7px 7px 21px -6px rgba(0, 0, 0, 0.49);
+	-moz-box-shadow:7px 7px 21px -6px rgba(0, 0, 0, 0.49);
+}
+.sf-menu ul li a {
+    padding: 5px 20px;
+	display: block;
+	transition: 0.3s;
+}*/
+
+@media (max-width: 1018px) and (min-width: 768px) {
+	
+	/* Prevent items from dropping into a new line in iPad */
+	/*.sf-menu a.sf-with-ul {
+		padding-right: 15px;
+	}
+	.sf-menu > li > a {
+		padding: 0 10px;
+		font-size: 10px;
+	}*/
+}
+
+/* Set up background image for header */
+/*.td-header-style-9 .td-header-sp-logo {
+    background: url(/wp-content/uploads/main-banner.jpg);
+    background-size: cover;
+	background-position: center center;
+	line-height: 200px;
+}
+.td-header-style-9 .td-logo-wrap-full .td-logo {
+    line-height: 200px;
+}*/
+
+
+/* Background color for last item in top menu */
+/*.top-header-menu > li:last-child {
+	background-color: gray;
+	padding-left: 12px;
+}
+
+.top-header-menu > li:last-child:hover {
+	background-color: #447C16 !important;
+}
+.top-header-menu > li:last-child a:hover {
+	color: white !important;
+}*/
+
+/* Tagline - Only for centered logos (Header styles 8, 9 & 10) */
+/*.site-tagline {
+	font-size: 16px;
+	color: #222;
+	margin: -16px 0 40px 0;
+    line-height: 120%;
+	font-family: 'Libre Franklin';
+}*/
+/* Hide tagline */
+.site-tagline {
+	display: none;
+}
+
+/* Add Color Bar on top of menu */
+/*.td-header-menu-wrap {
+   border-top: solid 6px #2F4993;
+}*/
+
+/* Main menu background color on hover - Vertical padding will depend on font size and family */
+/*.sf-menu > li > a {
+    padding: 15px 10px;
+}
+.sf-menu > li > a:hover {
+	background-color: red;	
+}*/
+
+
+/* HOMEPAGE */
+
+/* News Ticker - Show whole title */
+/*.td-trending-now-wrapper, .td-trending-now-display-area, .td-trending-now-post {
+    height: 50px;
+}
+@media (max-width: 767px) {
+	.td-trending-now-wrapper, .td-trending-now-display-area, .td-trending-now-post {
+		height: 110px !important;
+	}
+}*/
+
+/* Grids - no zoom on hover */
+.td-hover-1 .td-module-thumb .entry-thumb {
+     transition: none !important; 
+    -webkit-transition: none !important; 
+}
+.td-hover-1 .td-big-grid-post:hover .td-module-thumb .entry-thumb {
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+}
+
+
+/* POST SINGLE */
+
+/* Blockquotes - Change styles */
+.td-post-content blockquote p {
+	text-transform: none;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: left;
+	color: #222 !important;
+}
+.td-post-content blockquote {
+	padding-left: 20px;
+	border-left: solid 1px black;
+	color: #222;
+}
+
+/* Secondary title */
+/*
+.secondary-title {
+
+}*/
+
+/* Increase tab height on mobiles (Related posts / More from Authors) */
+@media (max-width: 767px) {
+
+	/*.td_block_template_1 .td-related-title > .td-related-left, .td_block_template_1 .td-related-title > .td-related-right {
+		padding: 15px 12px 15px 12px !important;
+	}*/
+}
+
+/* Podcasts - Add margin below player */
+.powerpress_player {
+	margin-bottom: 30px;
+}
+
+
+
+/* STAFF */
+
+/* Align staff member image to the left - Requires 'pic-left' class in element */
+.tdm_block_team_member.pic-left .tdm-member-image {
+    background-position: left center !important;
+}
+
+/* Change color of links inside member description - Replace page id */
+/*.page-id-171315 .td-main-content-wrap .tdm-descr a {
+	color: #0051FF;
+}
+.page-id-171315 .td-main-content-wrap .tdm-descr a:hover {
+	color: #003BBA;
+}*/
+
+/* Rectangular user avatar */
+/*.tdm-food-menu-image-wrap .tdm-food-menu-image {
+    width: 120px;
+    height: 180px !important;
+}*/
+/* Improve author avatar in single post when using rectangular avatar */
+/*.single-post .td-author-name, .single-blog .td-author-name {
+	margin-top: 0;
+}
+.single-post .author-box-wrap .desc, .single-blog .author-box-wrap .desc {
+	margin-left: 80px;
+}
+.single-post .author-box-wrap .avatar, .single-blog .author-box-wrap .avatar {
+	max-width: 70px;
+}*/
+
+/* SIDEBAR */
+
+/* Hide lines between items in module 8 - Add class no-lines in element */
+.no-lines .td_module_8 {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+/* Eventbrite widget */
+
+/*Add css ID eb-widget */
+#eb-widget.eaw-block li {
+	margin-left: 0 !important;
+}
+#eb-widget .eaw-booknow a {
+	color: #5daa1d;
+	font-weight: bold;
+	font-size: 14px;
+}
+#eb-widget .eaw-booknow a:hover {
+	text-decoration: underline !important;
+}
+#eb-widget h3.eaw-title a {
+	font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+	padding-top: 20px;
+}
+#eb-widget .eaw-thumb {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#eb-widget {
+	padding: 6% 7%;
+    background-color: #f7f7f7;
+}
+#eb-widget .eaw-time {
+	color: #aaa;
+	font-size: 14px;
+    line-height: 120%;
+	font-family: "NunitoSans-Light";
+}
+#eb-widget.eaw-block ul {
+	margin-bottom: 0;
+}
+#eb-widget ul.eaw-ulx > li:last-child {
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 0;
+	padding-bottom: 0;
+}
+#eb-widget img.eaw-alignleft {
+    float: none;
+}
+.events-widget .entry-thumb {
+	width: 100%;
+}
+.events-widget .td-post-category {
+	display: none;
+}
+
+
+
+/* AUTHOR ARCHIVE */
+
+/* Hide counters in author page */
+.author .td-author-counters {
+	display: none;
+}
+/* Increase font size */
+/*.author-box-wrap .desc {
+	font-size: 15px;
+}*/
+
+
+/* NEWSLETTER */
+
+/* Mailchimp form styles */
+/* Form wrapper box */
+#mc4wp-form-1{
+    padding: 30px 25px;
+    background: #ececec;
+}
+/* Vertical spacing between items */
+#mc4wp-form-1 p {
+    margin-bottom: 10px;
+}
+#mc4wp-form-1 p:last-child {
+    margin: 30px 0 20px 0;
+}
+/* Button */
+#mc4wp-form-1 input[type="submit"]{
+    background: #02E5FC;
+    padding: 15px;
+}
+#mc4wp-form-1 input[type="submit"]:hover {
+    background: #222;
+}
+/* Title */
+#mc4wp-form-1 .title-subscribe {
+	color: #02E5FC;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Fields */
+#mc4wp-form-1 input[type="email"], #mc4wp-form-1 input[type="text"] {
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+	font-size: 14px;
+}
+#mc4wp-form-1 select {
+	height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+#mc4wp-form-1 input::placeholder {
+    font-size: 14px;
+}
+
+
+/* CONTACT */
+
+/* Contact form styles */
+/* Fields with background color and no label (placeholder only) - Require wrapper with id contact-form-cont */ 
+#contact-form-cont input[type=text], #contact-form-cont input[type=email], #contact-form-cont textarea {
+    font-size: 14px;
+    line-height: 100%;
+    color: #6f6f6f;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+#contact-form-cont textarea {
+    padding-top: 8px;
+}
+#contact-form-cont label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#contact-form-cont .wpcf7-submit {
+    border-radius: 4px;
+}
+/* Button */
+.wpcf7-submit {
+    background-color:#4db2ec !important;
+    width: 100%;
+}
+.wpcf7-submit:hover {
+    background-color:#222 !important;
+}
+/* Button height */
+.wpcf7-submit {
+    height: 48px;
+    font-size: 14px;
+}
+/* Floating validation */
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+    border: none !important;
+    background: rgba(0, 0, 0, 0.81) !important;
+    color: white;
+    width: auto;
+    border-radius: 4px;
+    top: 0;
+    right: 10%;
+    left: auto;
+}
+.use-floating-validation-tip .your-message span.wpcf7-not-valid-tip {
+    top: -40px;
+}
+/* Response */
+div.wpcf7-response-output {
+    margin: 2em 0;
+    padding: 0.2em 1em;
+    border: 2px solid #4db2ec;
+}
+
+/* GUEST POSTS */
+
+/* Submit Your Article */
+/* Fields */
+#usp_form fieldset {
+	border: none;
+    margin: 15px 0px;
+    padding: 0;
+}
+#usp_form input{
+    font-size: 14px;
+    border: 1px solid #e1e1e1;
+    height: 50px;
+    border-radius: 4px;
+    padding: 3px 15px;
+	width: 100% !important;
+}
+#usp_form input#user-submitted-checkbox{
+	height:auto !important;
+	width: auto !important;
+}
+#usp_form textarea{ 
+	 border-radius: 4px;
+	 font-size: 14px;
+}
+#usp_form ::-webkit-input-placeholder { /* WebKit browsers */
+     color: transparent;
+}
+#usp_form:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+#usp_form::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+#usp_form:-ms-input-placeholder { /* Internet Explorer 10+ */
+     color: transparent;
+}
+/* Labels */
+#usp_form label {
+	display:none;
+}
+#usp_form .usp-checkbox label {
+	display:initial;
+}
+/* Button */
+#usp_form input[type=submit] {
+	background-color: #4db2ec;
+	width: 50% !important;
+}
+#usp_form input[type=submit]:hover {
+	background-color: #222;
+}
+/* Response */
+#user-submitted-posts div#usp-success-message {
+    border: solid 2px #4db2ec;
+    padding: 10px;
+}
+#user-submitted-posts #usp-error-message {
+    border: solid 2px #4db2ec;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+div#user-submitted-posts div#usp-error-message.usp-callout-failure {
+	color: #222;
+}
+#user-submitted-posts .parsley-errors-list li {
+    color: #222;
+}
+div#user-submitted-posts ul.parsley-errors-list.filled li.parsley-required {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    color: #4db2ec;
+    background-color: transparent;
+}
+
+/* Hide More from author in Guest Posts */
+.single-post.guest-post .td-related-right {
+	display: none !important;
+}
+
+/* Blog */
+
+/* Add class "hide thumbs" to module */
+.hide-thumbs .item-details  {
+	margin-left: 0 !important;
+}
+.hide-thumbs .td-module-thumb {
+	display: none !important;
+}
+/* Replace the-blog class with page slug */
+.the-blog .item-details, .td_module_10 .item-details {
+    min-height: 1px;
+}
+
+/* Commentary */
+/* Hide all category tags (special tag to be shown via js) */
+.td-big-grid-post .td-post-category, .td-post-category {
+	display: none !important;
+}
+/* Hide tag in the archive page of that category - Update class with category + category slug + .td-post-category */
+.category-commentary .td-post-category {
+	display: none !important;
+}
+/* Add custom bgcolor to category - use class tag + category slug */
+.td-grid-style-1.td-hover-1 .td-big-grid-post .td-post-category.tag-commentary, .tag-commentary {
+	background-color: red !important;
+}
+.td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category.tag-commentary, .tag-commentary:hover {
+	background-color: green !important;
+}

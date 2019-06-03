@@ -1,0 +1,88 @@
+
+/*  ----------------------------------------------------------------------------
+    editor style
+*/
+/* max width  - content + sidebar */
+html .mceContentBody {
+  max-width: none;
+  background: none;
+  /* responsive Landscape tablet */
+}
+html .mceContentBody:after {
+  content: '';
+}
+
+/*  ----------------------------------------------------------------------------
+    quote
+*/
+.td-page-content blockquote,
+.td-post-content blockquote,
+.wpb_text_column blockquote,
+.td_block_text_with_title blockquote,
+.bbpress blockquote,
+.woocommerce #tab-description blockquote,
+.mce-content-body blockquote,
+.comment-content blockquote {
+  padding: 0;
+  position: relative;
+  border-left: none;
+  margin: 40px 5% 38px 5%;
+  /* responsive portrait phone */
+}
+@media (max-width: 767px) {
+  .td-page-content blockquote,
+  .td-post-content blockquote,
+  .wpb_text_column blockquote,
+  .td_block_text_with_title blockquote,
+  .bbpress blockquote,
+  .woocommerce #tab-description blockquote,
+  .mce-content-body blockquote,
+  .comment-content blockquote {
+    margin: 20px 3% 18px 3%;
+  }
+}
+.td-page-content blockquote p,
+.td-post-content blockquote p,
+.wpb_text_column blockquote p,
+.td_block_text_with_title blockquote p,
+.bbpress blockquote p,
+.woocommerce #tab-description blockquote p,
+.mce-content-body blockquote p,
+.comment-content blockquote p {
+  font-weight: 400;
+  word-wrap: break-word;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: left;
+  color: #222 !important;
+  text-transform: none;
+}
+/* responsive portrait tablet */
+/* responsive portrait phone */
+@media (min-width: 768px) and (max-width: 1018px) {
+  .td-page-content blockquote p,
+  .td-post-content blockquote p,
+  .wpb_text_column blockquote p,
+  .td_block_text_with_title blockquote p,
+  .bbpress blockquote p,
+  .woocommerce #tab-description blockquote p,
+  .mce-content-body blockquote p,
+  .comment-content blockquote p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .td-page-content blockquote p,
+  .td-post-content blockquote p,
+  .wpb_text_column blockquote p,
+  .td_block_text_with_title blockquote p,
+  .bbpress blockquote p,
+  .woocommerce #tab-description blockquote p,
+  .mce-content-body blockquote p,
+  .comment-content blockquote p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
